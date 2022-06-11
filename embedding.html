@@ -1,5 +1,6 @@
 <div id="dossierContainer"></div>
 <script src="http://demo.microstrategy.com/MicroStrategyLibrary/javascript/embeddinglib.js"></script>
+<script type="text/javascript">
 
 baseRestURL = "https://demo.microstrategy.com/MicroStrategyLibrary";
 projectID   = "EC70648611E7A2F962E90080EFD58751";
@@ -12,11 +13,5 @@ var dossierUrl = baseRestURL + '/app/' + projectID + '/' + dossierID;
 microstrategy.dossier.create({
 
 	placeholder: document.getElementById("dossierContainer"),
-	url: dossierUrl,
-
-	disableNotification: true,
-	enableResponsive: true,
-
-}).then(function(dossier) {
-	/* Code to execute after the Dossier has finished loading... */
+	url: dossierUrl
 });
