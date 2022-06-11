@@ -1,35 +1,21 @@
-<script src="http://{host}:{port}/{Library}/javascript/embeddinglib.js"></script>
 <div id="dossierContainer"></div>
+<script src="http://demo.microstrategy.com/MicroStrategyLibrary/javascript/embeddinglib.js"></script>
 
-/* These are the parameters necessary for connecting to the Dossier ----------------------------- */
 baseRestURL = "https://demo.microstrategy.com/MicroStrategyLibrary";
 projectID   = "B7CA92F04B9FAE8D941C3E9B7E0CD754";
 dossierID   = "43CDADC942EA17F40F7629BE9D48861B";
-/* since in this case we want dossier to load automatically for everyone we will use a demo user */
 username    = "demo";
 password    = "";
-/* End of configuration parameters  ------------------------------------------------------------- */
 
-/* Generate the complete URL for the Dossier */
 var dossierUrl = baseRestURL + '/app/' + projectID + '/' + dossierID;
 
-/* Populate div with Dossier: */
 microstrategy.dossier.create({
-	/* This is the document's <div> container where the Dossier should be placed. */
+
 	placeholder: document.getElementById("dossierContainer"),
 	url: dossierUrl,
 
-	/* The following parameters define the appearance of the Dossier.
-	E.g. is the navigation or collaboration bar displayed, do right-click actions work, etc. */
 	disableNotification: true,
 	enableResponsive: true,
-
-	/* And parameters for the user authentication. */
-	/* In case we didn't want the dossier to load automatically for everyone */
-	/* and wanted the user to log in we would skip that part. */
-	enableCustomAuthentication: true,
-	customAuthenticationType: microstrategy.dossier.CustomAuthenticationType.AUTH_TOKEN,
-	getLoginToken: login
 
 }).then(function(dossier) {
 	/* Code to execute after the Dossier has finished loading... */
