@@ -1,29 +1,34 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
-</head>
-<body>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+	<title>PROBANDO</title>
+	<script type="text/javascript" src="http://demo.microstrategy.com/MicroStrategyLibrary/javascript/embeddinglib.js"></script>
+  </head>
+	
+<body onload="load()">
+	
+	<div id="dossierContainer" height="70%" width="70%"></div>
+	<script type="text/javascript">
+	
+	baseRestURL = "https://demo.microstrategy.com/MicroStrategyLibrary";
+	projectID   = "EC70648611E7A2F962E90080EFD58751";
+	dossierID   = "EAF770F9CD46F277F7B36588C3425B94";
+	username    = "demo";
+	password    = "";
 
-<div id="dossierContainer"></div>
-<script src="http://demo.microstrategy.com/MicroStrategyLibrary/javascript/embeddinglib.js"></script>
-<script type="text/javascript">
-
-baseRestURL = "https://demo.microstrategy.com/MicroStrategyLibrary";
-projectID   = "EC70648611E7A2F962E90080EFD58751";
-dossierID   = "EAF770F9CD46F277F7B36588C3425B94";
-username    = "demo";
-password    = "";
-
-var dossierUrl = baseRestURL + '/app/' + projectID + '/' + dossierID;
-
-microstrategy.dossier.create({
-
-	placeholder: document.getElementById("dossierContainer"),
-	url: dossierUrl
-});
-
+	function load() {
+		
+	var url = baseRestURL + '/app/' + projectID + '/' + dossierID;
+	var container = document.getElementById("dossierContainer")
+	
+		microstrategy.dossier.create({
+		url: url,
+		enableResponsive: true,
+		placeholder: container
+		})
+	};	
+	</script>
+	
 </body>
 </html>
