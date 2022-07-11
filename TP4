@@ -1,0 +1,76 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>index.html</title>
+	</head>
+	<body>
+		<p align="right"><img width="100px" src="https://www.universidades.com.ar/logos/original/logo-universidad-de-buenos-aires.webp" />
+		<h1 align="center">Trabajo Práctico Número 4 - Sitio Web y Manual de HTML</h1>
+		<h2>HOME</h2>
+		<h3>91.14 - Informática para la Gestión de Empresa</h3>
+		<hr>
+		<h4>Resumen Alumno</h4>
+		<p>
+		Me llamo Ignacio Rodríguez Mariani (Padrón 102317) y actualmente estoy cursando las últimas materias de la carrera Ingenieria Industrial.<br>
+		Trabajo hace un poco más de un año en Tenaris, dentro del area de IT.<br>
+		Me interesó la materia porque pude ampliar mis conocimientos generales sobre los sistemas de la información dentro de las empresas.
+		</p>
+		<h4>Asignatura</h4>
+		<table border="1">
+			<tr>
+				<th>Materia</th>
+				<th>Código</th>
+				<th>Créditos</th>
+				<th>Cuatrimestre/Año</th>
+			</tr>
+			<tr>
+				<td>Informática para la Gestión de Empresas</td>
+				<td>91.14</td>
+				<td>4</td>
+				<td>01/22</td>
+			</tr>
+		</table>
+				<h4>Profesores</h4>
+		<table border="1">
+			<tr>
+				<th>Nombre</th>
+				<th>Apellido</th>
+				<th>Título</th>
+				<th>Email</th>
+			</tr>
+			<tr>
+				<td>Patricio</td>
+				<td>Rey</td>
+				<td>Ingeniero Informático</td>
+				<td>prey@fi.uba.ar</td>
+			</tr>
+			<tr>
+				<td>Eduardo</td>
+				<td>Chidichimo</td>
+				<td>Ingeniero Industrial</td>
+				<td>echidichimo@fi.uba.ar</td>
+			</tr>
+			<tr>
+				<td>Javier</td>
+				<td>Abadal</td>
+				<td>Ingeniero Industrial</td>
+				<td>jabadal@fi.uba.ar</td>
+			</tr>
+		</table>
+		<br>
+		<hr>
+		<h3>LINKS</h3>
+			<ul>
+				<li>
+				<a href="Curriculum.html">Curriculum</a>
+				</li>
+				<li>
+				<a href="Links.html">Links</a>
+				</li>
+				<li>
+				<a href="MV.html">MV</a>
+				</li>
+			</ul>
+	</body>
+</html>
